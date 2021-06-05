@@ -1,0 +1,22 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "مرحبا انا كوفيد بوت ، أنا بوت غانحاول نجاوب على الأسئلة ديال على كورونا و على الوضعية الوبائية بالمغرب و التلقيح"
+
+  utter_goodbye:
+  - text: "بالسلامة"
+  - text: "تهلا ف راسك"
+  - text: "باي باي"
+
+  utter_iamabot:
+  - text: "أنا كوفيد بوت، صاوبني أخدام أيوب و أولحبيب إدريس"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
