@@ -16,3 +16,8 @@ stories:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- story: definition path
+  steps:
+  - intent: definition
+  - action: utter_definition
