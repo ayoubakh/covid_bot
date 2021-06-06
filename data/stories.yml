@@ -7,6 +7,19 @@ stories:
   - intent: greet
   - action: utter_greet
 
+- story: last_news path
+  steps:
+  - intent: last_news
+  - action: utter_health_emergency
+  - action: utter_travel
+  - action: utter_Vaccination_autorisation
+  - action: utter_other_news
+
+- story: symptoms path
+  steps:
+  - intent: symptoms
+  - action: utter_symptoms
+
 - story: bye path
   steps:
   - intent: goodbye

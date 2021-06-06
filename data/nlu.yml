@@ -3,30 +3,87 @@ version: "2.0"
 nlu:
 - intent: greet
   examples: |
-    -هاي
-    -سلام
-    -مرحبا
-    -افين
-    -صباح الخير
-    -صباح النور
-    -مساء الخير
-    -اهلا
-    -اهلين
-    -واحد السلام
-    -السلام
-    -شكون نتا
+    - هاي
+    - سلام
+    - مرحبا
+    - افين
+    - صباح الخير
+    - صباح النور
+    - مساء الخير
+    - اهلا
+    - اهلين
+    - واحد السلام
+    - السلام
+    - شكون نتا
+    - salam
+    - Hi
+    - hello
+    - wa fin
+    - cc
+    - ahlan
+    - sbah lkhir
+    - sba7 nour
+    - wa7d salam
+    - wahd salam
+    - chkon nta 
+    - m3amn kanhder
+    
+
+- intent: last_news 
+  examples: |
+    - اشناهوما آخر الأخبار على كورونا 
+    - أشناهوما آخر الاخبار على كوفيد 
+    - واش كاين شي جديد على كوفيد 
+    - واش كاين شي خبار على كورونا 
+    - واش قالو شي حاجة جديدة على كورونا
+    - كاين شي جديد على كورونا 
+    - كاين شي جديد على كوفيد 
+    - كاين شي جديد على هاد الفيروس 
+    - قالو شي حاجة جديدة على كورونا
+    - achnahowa akhir makayn 3la corona
+    - achnahowa akhir makayn 3la covid
+    - wach kayn chi jadid 3la covid 
+    - kayn chi jadid 3la covid
+    - kayn chi jadid 3la corona
+    - 9alo chi 7aja 3la covid
+    - galo chi 7aja jdida 3la covid
+    - amndra kayn chi jadid
+
+- intent: symptoms
+  examples: |
+    - شناهوها الأعراض ديال كوفيد 
+    - باش غادي واش فيا كورونا 
+    - باش غادي نعرف راسي واش فيا كوفيد
+    - شناهوما الأعراض ديال كورونا 
+    - باش غادي نعرف راسي مريض
+    - واش فيا كورونا 
+    - باش غادي نعرف راسي راه مريض بكورونا
+    - chnahoma l2a3rad dyal corona
+    - chnahoma l2a3rad dyal covid
+    - bach ghadi n3rf rah fiya corona
+    - bach radi n3rf wach fiya covid
+    - bach ghadi n3rf rassi mrid
+    - wach fiya corona
+    
 
 - intent: goodbye
   examples: |
     - بالسلامة
     - بسلامة
-    - bye
     - بايباي
     - باي
     - اكي عاون ربي
     - تهالا فراسك
     - bslama
     - thela
+    - tla7
+    - bye
+    - aki 3awn rbi
+    - thla f rassk
+    - see you
+    - nchofok
+    - yallah nchofok
+
 
 - intent: bot_challenge
   examples: |
@@ -39,3 +96,10 @@ nlu:
     - واش كنهدر مع انسان 
     - واش كنهدر مع شاتبوت 
     - واش كنهدر مع شات بوت
+    - chkon nta
+    - wach nta bot
+    - m3amn kanhder
+    - wach kanhder m3a bot
+    - wach nta bnadm
+    - wach kanhder m3a bnadm
+    - wach kanhder m3a chatbot
