@@ -47,6 +47,17 @@ nlu:
     - شني كورورنا
     - شني هي كورونا
     - شنو هي كورونا
+    - achanhiya corona
+    - axnahowa virus corona
+    - covid-19?
+    - corona
+    - axnahiya coroan
+    - achno tay3ni covid-19
+    - ach tat3ni corona
+    - fhmni corona
+    - virus ola microbe ?
+    - chno covid
+    - xno covid
 - intent: severity
   examples: |
     - هل ينبغي أن أشعر بالقلق من الإصابة بمرض كوفيد19
@@ -61,6 +72,18 @@ nlu:
     - كورونا عندو تأثير على الأطفال؟
     - كورونا عندو تأثير على الدراري الصغار؟
     - دابا وش غنموت ولا غنعيش؟
+    - wach 5asni nkhaf mn corona
+    - wach corona tat9tl
+    - achnahya l5otora dyal corona
+    - l5otora dyal corona
+    - corona 3nd drari srrar
+    - corona tat9tl drari srrar
+    - corona tat9tl nas lkbar?
+    - wach corona marad 5atir?
+    - tat9tl?
+    - virus 9atil?
+    - wach 5asna n5afo m corona?
+    - n5af mn corona?
 - intent: confinement
   examples: |
     - شحال مدة الحجر
@@ -71,11 +94,23 @@ nlu:
     - هاد الحجر مطول واقيلا
     - شحال غانبقاو فهاد الحجر
     - ايمتا غيساليو الحجر
+    - lhajr sihi
+    - achnahowa lhajr sihi
+    - halat tawari2?
+    - kifach halat tawari2?
+    - wach halat tawari2 mazal kayna?
+    - had lhajr sihi mtowl wa9ila
 - intent: propagation
   examples: |
     - علاه كيفاش كينتقل
     - وكي كينتاشر
     - كيفاش كينتشر الفيروس
+    - kifach tatnta9l corona?
+    - kifax tatnta9l corona?
+    - ki taynta9l l virus?
+    - l2inti9al dyal covid-19?
+    - wach covid sari3 l intichar?
+    - 3lah kifach tatnta9l corona?
 - intent: goodbye
   examples: |
     - بالسلامة
