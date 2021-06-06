@@ -20,6 +20,11 @@ stories:
   - intent: symptoms
   - action: utter_symptoms
 
+- story: life time path
+  steps:
+  - intent: life_time
+  - action: utter_life_time
+
 - story: bye path
   steps:
   - intent: goodbye

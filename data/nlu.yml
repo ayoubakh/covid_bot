@@ -64,6 +64,33 @@ nlu:
     - bach radi n3rf wach fiya covid
     - bach ghadi n3rf rassi mrid
     - wach fiya corona
+
+- intent: life_time
+  examples: |
+    - كم من الوقت يظل الفيروس حياً على الأسطح؟
+    - قداش كايبقى الفيروس حي
+    - شحال كيعيش الفيروس
+    - شحال من ساعة كيبقا الفيروس حي
+    - شحال ديال الوقت كيبقا الفيروس حي
+    - كم يعيش كورونا على الأجسام الصلبة
+    - شحال كيعيش
+    - شحال كيعيش على برا
+    - واش الفيروس كتقتلو الشمس
+    - شحال كيعيش على الوراق 
+    - شحال كيعيش على برا 
+    - شحال كيعيش على السطوحا
+    - شحال كيعيش على الزاج 
+    - شحال كيعيش على الزجاج
+    - شحال كيعيش على النحاس
+    - ch7al kayb9a covid 7y
+    - ch7al kay3ich lvirus
+    - ch7al ka3ich 3la bra
+    - ch7al kay3ich
+    - ch7al kay3ich 3la lwra9
+    - ch7al kay3ich 3la sto7a
+    - ch7al kay3ich 3la zaj
+    - ch7al kay3ich 3la Zozaj
+    - ch7al kay3ich 3la n7ass
     
 
 - intent: goodbye
