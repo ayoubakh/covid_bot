@@ -21,3 +21,18 @@ stories:
   steps:
   - intent: definition
   - action: utter_definition
+
+- story: severity path
+  steps:
+  - intent: severity
+  - action: utter_severity
+
+- story: confinement path
+  steps:
+  - intent: confinement
+  - action: utter_confinement
+
+- story: propagation path
+  steps:
+  - intent: propagation
+  - action: utter_propagation
