@@ -25,6 +25,16 @@ stories:
   - intent: life_time
   - action: utter_life_time
 
+- story: protection path
+  steps:
+  - intent: protection
+  - action: utter_protection
+
+- story: thankyou path
+  steps:
+  - intent: thankyou
+  - action: utter_thankyou
+
 - story: bye path
   steps:
   - intent: goodbye
