@@ -36,3 +36,13 @@ stories:
   steps:
   - intent: propagation
   - action: utter_propagation
+
+- story: covid stat path
+  steps:
+  - intent: covid_stat_city
+  - action: action_covid_stat_city
+
+- story: covid report path
+  steps: 
+  - intent: covid_report
+  - action: action_covid_daily_report
