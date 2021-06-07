@@ -51,6 +51,7 @@ nlu:
 
 - intent: symptoms
   examples: |
+    - ماهي أعراض كورونا
     - شناهوها الأعراض ديال كوفيد 
     - باش غادي واش فيا كورونا 
     - باش غادي نعرف راسي واش فيا كوفيد
@@ -91,7 +92,48 @@ nlu:
     - ch7al kay3ich 3la zaj
     - ch7al kay3ich 3la Zozaj
     - ch7al kay3ich 3la n7ass
-    
+
+- intent: protection
+  examples: |
+    - كيف أحمي نفسي
+    - كيفاش نقدر نحمي راسي من الفيروس
+    - كيفاش نقدر نحمي راسي من كورونا
+    - كيفاش نقدر نحمي راسي من كوفيد 
+    - شنو خصني ندير باش نحمي راسي 
+    - شنو خصني ندير باش نحمي راسي من كورونا 
+    - شنو خصني ندير باش ما يقيسنيش الفيروس
+    - كيف أحمي نفسي من الفيروس
+    - اشنو لي خص ايدار الا بغيت نحمي راسي
+    - Kifach n9der n7mi rassi 
+    - kifach n9der n7mi rassi mn corona
+    - kifach n9der n7mi rasii mn covid
+    - chno khsni ndir bach n7mi rassi mn covid
+    - chno khsni ndir bach n7mi rassi mn corona
+    - chno khsni ndir bach may9isnich lvirus
+    - kayfa a7mi nafssi
+    - chno li khs idar ila bghit n7mi rassi
+
+- intent: thankyou
+  examples: |
+    - ميرسي
+    - شكران
+    - شكرا
+    - شووووكران
+    - تانكيو 
+    - تانكس
+    - احفظك
+    - الله يحفضك 
+    - الله يجازيك بخير
+    - العز
+    - mrc
+    - chokran
+    - choukran
+    - thanks
+    - thank you
+    - i7fdk
+    - allah y7fdk
+    - lah yjazik bikhir
+    - l3z
 
 - intent: goodbye
   examples: |
