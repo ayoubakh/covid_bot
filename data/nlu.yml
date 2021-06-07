@@ -59,12 +59,14 @@ nlu:
     - باش غادي نعرف راسي مريض
     - واش فيا كورونا 
     - باش غادي نعرف راسي راه مريض بكورونا
+    - واش غادي نموت
     - chnahoma l2a3rad dyal corona
     - chnahoma l2a3rad dyal covid
     - bach ghadi n3rf rah fiya corona
     - bach radi n3rf wach fiya covid
     - bach ghadi n3rf rassi mrid
     - wach fiya corona
+    - wach ghanmoot
 
 - intent: life_time
   examples: |
@@ -201,6 +203,8 @@ nlu:
     - واش المرا الحاملة ممكن تلقح 
     - شناهوما الحالات لي ماخصهوهش اتلقحو 
     - واش اللقاح خطير على شي فئة
+    - أنا حاملة ، واش اللقاح ممكن ايدر ليا شي حاجة ؟
+    - أنا مريض واش غادي ادير ليا اللقاح شي حاجة ؟
 
 - intent: thankyou
   examples: |
