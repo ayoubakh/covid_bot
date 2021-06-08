@@ -86,7 +86,7 @@ nlu:
   examples: |
     - ماهي أعراض كورونا
     - شناهوها الأعراض ديال كوفيد 
-    - باش غادي واش فيا كورونا 
+    - باش غادي نعرف واش فيا كورونا
     - باش غادي نعرف راسي واش فيا كوفيد
     - شناهوما الأعراض ديال كورونا 
     - باش غادي نعرف راسي مريض
@@ -296,7 +296,7 @@ nlu:
     - yallah nchofok
     - nt9ach3o
     - yallah nt9ach3o
-    - stope
+    - stop
 
 
 - intent: bot_challenge
@@ -319,3 +319,4 @@ nlu:
     - wach kanhder m3a bnadm
     - wach kanhder m3a chatbot
     - m3amn kandwi
+
