@@ -3,18 +3,31 @@ version: "2.0"
 nlu:
 - intent: greet
   examples: |
-    -هاي
-    -سلام
-    -مرحبا
-    -افين
-    -صباح الخير
-    -صباح النور
-    -مساء الخير
-    -اهلا
-    -اهلين
-    -واحد السلام
-    -السلام
-    -شكون نتا
+    - هاي
+    - سلام
+    - مرحبا
+    - افين
+    - صباح الخير
+    - صباح النور
+    - مساء الخير
+    - اهلا
+    - اهلين
+    - واحد السلام
+    - السلام
+    - شكون نتا
+    - salam
+    - Hi
+    - hello
+    - wa fin
+    - cc
+    - ahlan
+    - sbah lkhir
+    - sba7 nour
+    - wa7d salam
+    - wahd salam
+    - chkon nta 
+    - m3amn kanhder
+
 - intent: definition
   examples: |
     - كورونا
@@ -111,17 +124,242 @@ nlu:
     - l2inti9al dyal covid-19?
     - wach covid sari3 l intichar?
     - 3lah kifach tatnta9l corona?
+    
+- intent: last_news 
+  examples: |
+    - اشناهوما آخر الأخبار على كورونا 
+    - أشناهوما آخر الاخبار على كوفيد 
+    - واش كاين شي جديد على كوفيد 
+    - واش كاين شي خبار على كورونا 
+    - واش قالو شي حاجة جديدة على كورونا
+    - كاين شي جديد على كورونا 
+    - كاين شي جديد على كوفيد 
+    - كاين شي جديد على هاد الفيروس 
+    - قالو شي حاجة جديدة على كورونا
+    - achnahowa akhir makayn 3la corona
+    - achnahowa akhir makayn 3la covid
+    - wach kayn chi jadid 3la covid 
+    - kayn chi jadid 3la covid
+    - kayn chi jadid 3la corona
+    - 9alo chi 7aja 3la covid
+    - galo chi 7aja jdida 3la covid
+    - amndra kayn chi jadid
+
+- intent: symptoms
+  examples: |
+    - ماهي أعراض كورونا
+    - شناهوها الأعراض ديال كوفيد 
+    - باش غادي واش فيا كورونا 
+    - باش غادي نعرف راسي واش فيا كوفيد
+    - شناهوما الأعراض ديال كورونا 
+    - باش غادي نعرف راسي مريض
+    - واش فيا كورونا 
+    - باش غادي نعرف راسي راه مريض بكورونا
+    - واش غادي نموت
+    - chnahoma l2a3rad dyal corona
+    - chnahoma l2a3rad dyal covid
+    - bach ghadi n3rf rah fiya corona
+    - bach radi n3rf wach fiya covid
+    - bach ghadi n3rf rassi mrid
+    - wach fiya corona
+    - wach ghanmoot
+
+- intent: life_time
+  examples: |
+    - كم من الوقت يظل الفيروس حياً على الأسطح؟
+    - قداش كايبقى الفيروس حي
+    - شحال كيعيش الفيروس
+    - شحال من ساعة كيبقا الفيروس حي
+    - شحال ديال الوقت كيبقا الفيروس حي
+    - كم يعيش كورونا على الأجسام الصلبة
+    - شحال كيعيش
+    - شحال كيعيش على برا
+    - واش الفيروس كتقتلو الشمس
+    - شحال كيعيش على الوراق 
+    - شحال كيعيش على برا 
+    - شحال كيعيش على السطوحا
+    - شحال كيعيش على الزاج 
+    - شحال كيعيش على الزجاج
+    - شحال كيعيش على النحاس
+    - ch7al kayb9a covid 7y
+    - ch7al kay3ich lvirus
+    - ch7al ka3ich 3la bra
+    - ch7al kay3ich
+    - ch7al kay3ich 3la lwra9
+    - ch7al kay3ich 3la sto7a
+    - ch7al kay3ich 3la zaj
+    - ch7al kay3ich 3la Zozaj
+    - ch7al kay3ich 3la n7ass
+
+- intent: protection
+  examples: |
+    - كيف أحمي نفسي
+    - كيفاش نقدر نحمي راسي من الفيروس
+    - كيفاش نقدر نحمي راسي من كورونا
+    - كيفاش نقدر نحمي راسي من كوفيد 
+    - شنو خصني ندير باش نحمي راسي 
+    - شنو خصني ندير باش نحمي راسي من كورونا 
+    - شنو خصني ندير باش ما يقيسنيش الفيروس
+    - كيف أحمي نفسي من الفيروس
+    - اشنو لي خص ايدار الا بغيت نحمي راسي
+    - Kifach n9der n7mi rassi 
+    - kifach n9der n7mi rassi mn corona
+    - kifach n9der n7mi rasii mn covid
+    - chno khsni ndir bach n7mi rassi mn covid
+    - chno khsni ndir bach n7mi rassi mn corona
+    - chno khsni ndir bach may9isnich lvirus
+    - kayfa a7mi nafssi
+    - chno li khs idar ila bghit n7mi rassi
+
+- intent: call_centers 
+  examples: |
+    - الا حسيت بشي حاجة و باغي نتاصل بيهوم ؟
+    - شناهو الرقم الا بغيت نتاصل بيهوم 
+    - شناهيا الأرقام المتوفرة الا بغيت نتاصل بيهوم 
+    - كيفاش ممكن نتاصل بيهوم 
+    - ماهي الأرقام المتوفرة للإتصال
+    - شناهيا النمرة الا بغيت نهدر معاهوم 
+    - اشناهو النيميرو الا بغيت نتاصل بيهوم
+    - ila 7ssit bchi 7aja o baghi ntassl bihom ?
+    - chnahowa numero ila bghit ntassl bihom
+    - chnahowa ra9m ila bghit ntassl bihom
+    - chnahiya nmra ila bghit nhder m3ahoom
+    - kifach momkin nhder m3ahoom
+    - kifach momkin ntassl bihom m3ahom
+
+- intent: vaccination_definition
+  examples: |
+    - اشناهوا التلقيح
+    - ماهو التلقيح 
+    - ما أهمية التلقيح
+    - كيف يعمل التلقيح
+    - chnahowa tl9i7
+    - mahowa tal9i7
+
+- intent: vaccination_safety
+  examples: |
+    - واش هاد التلقيح مزيان 
+    - واش هاد التلقيح مافيه والو 
+    - ياك ما دايرين لينا شي حاجة فهاد التلقيح
+    - زعما هاد التلقيح ما فيه والو 
+    - واش هاد التلقيح فعال 
+    - واش هاد التلقيح سليم 
+    - واش هاد التلقيح مضمون
+    - wach had tl9i7 mzn
+    - wach had tl9i7 mzyan
+    - wach had tl9i7 mafih walo
+    - yak madayrin chi 7aja fhad tl9i7
+    - wach had tl9i7 fa3al
+    - wach had tl9i7 salim
+    - wach had tl9i7 mdmoon
+
+- intent: vaccination_target
+  examples: |
+    - شكون هيا الفئة المستهدفة من التلقيح 
+    - شكون لي غايستافد من التلقيح 
+    - واش كولشي غادي يتلقح 
+    - شكون لي غادي يتلقح 
+    - ما هي الفئة المستهدفة من التلقيح
+    - chkon li ghadi ytl97
+    - chkon li ghadi ystafd mn tl9i7
+    - wach kolchi ghaytl97
+    - wach kolchi ghadi ytl97
+  
+- intent: vaccination_process
+  examples: |
+    - كيفاش غا دوز عملية التلقيح 
+    - كيفاش غايدوز التلقيح 
+    - كيفاش غادوز هاد العملية
+    - kifach ghadoz 3amaliyat tl9i7
+    - kifach ghaydoz tl9i7
+    - kifach ghadoz had l3amalia
+
+- intent: vaccination_effects
+  examples: |
+    - شنو هي الآثار الجانبية ديال التلقيح
+    - واش هاد التلقيح عندو شي آثار 
+    - واش التلقيح عندو شي أعراض 
+    - واش ممكن طرا ليا شي حاجة الا تلقحت 
+    - واش التلقيح كيخلي شي آثار 
+    - واش اقدر ايجوني آلام من بعد ما نتلقح 
+    - سمعت بلي هاد التلقيح عندو آثار جانبية
+
+- intent: vaccination_availability
+  examples: |
+    - واش التلقيح موجود 
+    - واش هاد اللقاح متوفر 
+    - واش اللقاح موجود 
+    - هل اللقاح كافي للجميع
+
+- intent: vaccination_contraindications
+  examples: |
+    - ماهي موانع التلقيح
+    - واش كاينين شي حالات ماخصهومش اتلقحو 
+    - هل يمكن للمرأة الحامل التلقيح 
+    - واش المرا الحاملة ممكن تلقح 
+    - شناهوما الحالات لي ماخصهوهش اتلقحو 
+    - واش اللقاح خطير على شي فئة
+    - أنا حاملة ، واش اللقاح ممكن ايدر ليا شي حاجة ؟
+    - أنا مريض واش غادي ادير ليا اللقاح شي حاجة ؟
+
+- intent: thankyou
+  examples: |
+    - ميرسي
+    - شكران
+    - شكرا
+    - شووووكران
+    - تانكيو 
+    - تانكس
+    - احفظك
+    - الله يحفضك 
+    - الله يجازيك بخير
+    - العز
+    - mrc
+    - chokran
+    - choukran
+    - thanks
+    - thank you
+    - i7fdk
+    - allah y7fdk
+    - lah yjazik bikhir
+    - l3z
+
+
 - intent: goodbye
   examples: |
     - بالسلامة
     - بسلامة
-    - bye
     - بايباي
     - باي
     - اكي عاون ربي
     - تهالا فراسك
+    - تهلا ف راسك 
+    - يالاه تهلا ف راسك 
+    - يالاه باي 
+    - يالاه نشوفوك 
+    - يالاه تلاح
+    - هبط 
+    - يالله هبط
+    - نشوفوك
+    - نتقاشعو 
+    - يالاه نتقاشعو
     - bslama
     - thela
+    - tla7
+    - yallah tla7
+    - yallah thla frassk
+    - yallah bye
+    - bye
+    - aki 3awn rbi
+    - thla f rassk
+    - see you
+    - hbt
+    - yallah hbt
+    - nchofok
+    - yallah nchofok
+    - nt9ach3o
+    - yallah nt9ach3o
+    - stope
 - intent: covid_stat_city
   examples: |
     - شحال من حالة كاينة ليوم ف مدينة [طنجة](city_name)
@@ -211,6 +449,7 @@ nlu:
     - halat lyoma
     - halat 
     - xhal mn hala lyoma
+
 - intent: bot_challenge
   examples: |
     - شكون نتا
@@ -222,3 +461,12 @@ nlu:
     - واش كنهدر مع انسان 
     - واش كنهدر مع شاتبوت 
     - واش كنهدر مع شات بوت
+    - معامن كندوي
+    - chkon nta
+    - wach nta bot
+    - m3amn kanhder
+    - wach kanhder m3a bot
+    - wach nta bnadm
+    - wach kanhder m3a bnadm
+    - wach kanhder m3a chatbot
+    - m3amn kandwi

@@ -7,6 +7,77 @@ stories:
   - intent: greet
   - action: utter_greet
 
+- story: last_news path
+  steps:
+  - intent: last_news
+  - action: utter_health_emergency
+  - action: utter_travel
+  - action: utter_Vaccination_autorisation
+  - action: utter_other_news
+
+- story: symptoms path
+  steps:
+  - intent: symptoms
+  - action: utter_symptoms
+
+- story: life time path
+  steps:
+  - intent: life_time
+  - action: utter_life_time
+
+- story: protection path
+  steps:
+  - intent: protection
+  - action: utter_protection
+
+- story: call_centers path
+  steps:
+  - intent: call_centers
+  - action: utter_call_centers
+
+## vaccination stories
+- story: vaccination definition path
+  steps:
+  - intent: vaccination_definition
+  - action: utter_vaccination_definition
+
+- story: vaccination safety path
+  steps:
+  - intent: vaccination_safety
+  - action: utter_vaccination_availability
+
+- story: vaccination target path
+  steps:
+  - intent: vaccination_target
+  - action: utter_vaccination_target
+
+- story: vaccination process path
+  steps:
+  - intent: vaccination_process
+  - action: utter_vaccination_process
+
+- story: vaccination effects path
+  steps:
+  - intent: utter_vaccination_effects
+  - action: utter_vaccination_effects
+
+- story: vaccination availability path
+  steps:
+  - intent: utter_vaccination_availability
+  - action: utter_vaccination_availability
+
+- story: vaccination contraindications path
+  steps:
+  - intent: vaccination_contraindications
+  - action: utter_vaccination_contraindications
+
+## end of vaccination stories
+
+- story: thankyou path
+  steps:
+  - intent: thankyou
+  - action: utter_thankyou
+
 - story: bye path
   steps:
   - intent: goodbye
