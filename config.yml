@@ -36,4 +36,4 @@ policies:
 #     max_history: 5
 #     epochs: 100
 #     constrain_similarities: true
-#   - name: RulePolicy
+  - name: RulePolicy

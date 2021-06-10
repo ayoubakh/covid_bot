@@ -60,8 +60,96 @@ nlu:
     - شني كورورنا
     - شني هي كورونا
     - شنو هي كورونا
-    
+    - achanhiya corona
+    - axnahowa virus corona
+    - covid-19?
+    - corona
+    - axnahiya coroan
+    - achno tay3ni covid-19
+    - ach tat3ni corona
+    - fhmni corona
+    - virus ola microbe ?
+    - chno covid
+    - xno covid
 
+- intent: severity
+  examples: |
+    - هل ينبغي أن أشعر بالقلق من الإصابة بمرض كوفيد19
+    - واش خصني نخاف من كورونا
+    - واش كورونا مرض خطير
+    - نخافو من كورونا؟
+    - الكورونا خطيرة؟
+    - وش كورونا كاتقتل؟
+    - واش غتقتلني كورونا؟
+    - كايقتل؟
+    - هاد لمرض كايقتل؟
+    - كورونا عندو تأثير على الأطفال؟
+    - كورونا عندو تأثير على الدراري الصغار؟
+    - دابا وش غنموت ولا غنعيش؟
+    - wach 5asni nkhaf mn corona
+    - wach corona tat9tl
+    - achnahya l5otora dyal corona
+    - l5otora dyal corona
+    - corona 3nd drari srrar
+    - corona tat9tl drari srrar
+    - corona tat9tl nas lkbar?
+    - wach corona marad 5atir?
+    - tat9tl?
+    - virus 9atil?
+    - wach 5asna n5afo m corona?
+    - n5af mn corona?
+     
+- intent: confinement
+  examples: |
+    - شحال مدة الحجر
+    - واش غنبقاو فالدار
+    - واش خاص نبقاو فالدار
+    - ايمتا غيسالي الحجر
+    - الحجر الصحي
+    - هاد الحجر مطول واقيلا
+    - شحال غانبقاو فهاد الحجر
+    - ايمتا غيساليو الحجر
+    - lhajr sihi
+    - achnahowa lhajr sihi
+    - halat tawari2?
+    - kifach halat tawari2?
+    - wach halat tawari2 mazal kayna?
+    - had lhajr sihi mtowl wa9ila
+
+- intent: propagation
+  examples: |
+    - علاه كيفاش كينتقل
+    - وكي كينتاشر
+    - كيفاش كينتشر الفيروس
+    - kifach tatnta9l corona?
+    - kifax tatnta9l corona?
+    - ki taynta9l l virus?
+    - l2inti9al dyal covid-19?
+    - wach covid sari3 l intichar?
+    - 3lah kifach tatnta9l corona?
+
+- intent: appearance
+  examples: |
+    - أين ظهر الكورونا
+    - مصدر الفيروس
+    - من أين أتى الفيروس
+    - مناش جا الفيروس
+    - منين جا الفيروس
+    - منين بدا الفيروس
+    - فين بدا الفيروس
+    - واش كورونا مصنع
+    - واش كورونا مؤامرة
+    - واش كورونا جاي من الخفاش
+    - كيفاش بدات كورونا
+    - كيفاش بدا كورونا
+    - كيفاش بدا كوفيد19
+    - كيفاش تسلط علينا كورونا
+    - فين بان هاد كورونا اول مرة
+    - كيفاش بدا كورونا
+    - منين جا كورونا
+    - منين جا هاد كورونا
+    - واش كورونا كاينة بالصح
+    
 - intent: last_news 
   examples: |
     - اشناهوما آخر الأخبار على كورونا 
@@ -73,14 +161,12 @@ nlu:
     - كاين شي جديد على كوفيد 
     - كاين شي جديد على هاد الفيروس 
     - قالو شي حاجة جديدة على كورونا
-    - achnahowa akhir makayn 3la corona
-    - achnahowa akhir makayn 3la covid
-    - wach kayn chi jadid 3la covid 
-    - kayn chi jadid 3la covid
-    - kayn chi jadid 3la corona
-    - 9alo chi 7aja 3la covid
-    - galo chi 7aja jdida 3la covid
-    - amndra kayn chi jadid
+
+- intent: vaccination_autorisation
+  examples: |
+    - واش التلقيح ضروري باش نسافر 
+    - واش التلقيح ضروري باش نسافر داخل المغرب 
+    - انا ما ملقح و بغيت نسافر
 
 - intent: symptoms
   examples: |
@@ -93,13 +179,7 @@ nlu:
     - واش فيا كورونا 
     - باش غادي نعرف راسي راه مريض بكورونا
     - واش غادي نموت
-    - chnahoma l2a3rad dyal corona
-    - chnahoma l2a3rad dyal covid
-    - bach ghadi n3rf rah fiya corona
-    - bach radi n3rf wach fiya covid
-    - bach ghadi n3rf rassi mrid
-    - wach fiya corona
-    - wach ghanmoot
+    - واس غنموت
 
 - intent: life_time
   examples: |
@@ -118,15 +198,6 @@ nlu:
     - شحال كيعيش على الزاج 
     - شحال كيعيش على الزجاج
     - شحال كيعيش على النحاس
-    - ch7al kayb9a covid 7y
-    - ch7al kay3ich lvirus
-    - ch7al ka3ich 3la bra
-    - ch7al kay3ich
-    - ch7al kay3ich 3la lwra9
-    - ch7al kay3ich 3la sto7a
-    - ch7al kay3ich 3la zaj
-    - ch7al kay3ich 3la Zozaj
-    - ch7al kay3ich 3la n7ass
 
 - intent: protection
   examples: |
@@ -139,14 +210,20 @@ nlu:
     - شنو خصني ندير باش ما يقيسنيش الفيروس
     - كيف أحمي نفسي من الفيروس
     - اشنو لي خص ايدار الا بغيت نحمي راسي
-    - Kifach n9der n7mi rassi 
-    - kifach n9der n7mi rassi mn corona
-    - kifach n9der n7mi rasii mn covid
-    - chno khsni ndir bach n7mi rassi mn covid
-    - chno khsni ndir bach n7mi rassi mn corona
-    - chno khsni ndir bach may9isnich lvirus
-    - kayfa a7mi nafssi
-    - chno li khs idar ila bghit n7mi rassi
+    - واش نقدر نحمي راسي من كورونا
+    - شنو هي سبل الوقاية من كورونا
+    - كيفاش نحميو ريوسنا من كورونا
+    - الوقاية
+    - وقاية
+    - الحماية
+    - حماية
+    - شنو نقدر ندير
+    - كيفاش نقدرو نصيطرو على الفيروس
+    - شي نصيحة عفاك
+    - كفاش نحمي راسي
+    - وكيفاش نحمي راسي منو
+    - وااايلي... وكيف نحمي راسي
+    - كيفاش نحمي راسي ومنمرضش
 
 - intent: call_centers 
   examples: |
@@ -157,21 +234,14 @@ nlu:
     - ماهي الأرقام المتوفرة للإتصال
     - شناهيا النمرة الا بغيت نهدر معاهوم 
     - اشناهو النيميرو الا بغيت نتاصل بيهوم
-    - ila 7ssit bchi 7aja o baghi ntassl bihom ?
-    - chnahowa numero ila bghit ntassl bihom
-    - chnahowa ra9m ila bghit ntassl bihom
-    - chnahiya nmra ila bghit nhder m3ahoom
-    - kifach momkin nhder m3ahoom
-    - kifach momkin ntassl bihom m3ahom
 
 - intent: vaccination_definition
   examples: |
     - اشناهوا التلقيح
+    - اشناهو اللقاح
     - ماهو التلقيح 
     - ما أهمية التلقيح
     - كيف يعمل التلقيح
-    - chnahowa tl9i7
-    - mahowa tal9i7
 
 - intent: vaccination_safety
   examples: |
@@ -182,13 +252,6 @@ nlu:
     - واش هاد التلقيح فعال 
     - واش هاد التلقيح سليم 
     - واش هاد التلقيح مضمون
-    - wach had tl9i7 mzn
-    - wach had tl9i7 mzyan
-    - wach had tl9i7 mafih walo
-    - yak madayrin chi 7aja fhad tl9i7
-    - wach had tl9i7 fa3al
-    - wach had tl9i7 salim
-    - wach had tl9i7 mdmoon
 
 - intent: vaccination_target
   examples: |
@@ -197,19 +260,14 @@ nlu:
     - واش كولشي غادي يتلقح 
     - شكون لي غادي يتلقح 
     - ما هي الفئة المستهدفة من التلقيح
-    - chkon li ghadi ytl97
-    - chkon li ghadi ystafd mn tl9i7
-    - wach kolchi ghaytl97
-    - wach kolchi ghadi ytl97
+    - كم من جرعة يجب على الشخص ان يتلقى
+    - شحال من جرعة كاينا ف التلقيح.
   
 - intent: vaccination_process
   examples: |
     - كيفاش غا دوز عملية التلقيح 
     - كيفاش غايدوز التلقيح 
     - كيفاش غادوز هاد العملية
-    - kifach ghadoz 3amaliyat tl9i7
-    - kifach ghaydoz tl9i7
-    - kifach ghadoz had l3amalia
 
 - intent: vaccination_effects
   examples: |
@@ -227,6 +285,7 @@ nlu:
     - واش هاد اللقاح متوفر 
     - واش اللقاح موجود 
     - هل اللقاح كافي للجميع
+    - كاين شي تلقيح
 
 - intent: vaccination_contraindications
   examples: |
@@ -234,10 +293,16 @@ nlu:
     - واش كاينين شي حالات ماخصهومش اتلقحو 
     - هل يمكن للمرأة الحامل التلقيح 
     - واش المرا الحاملة ممكن تلقح 
+    - واش حتا الدراري الصغار خصهوم اتلقحوا ؟
     - شناهوما الحالات لي ماخصهوهش اتلقحو 
     - واش اللقاح خطير على شي فئة
     - أنا حاملة ، واش اللقاح ممكن ايدر ليا شي حاجة ؟
+    - اللي حاملة ممكن تلقح ؟
+    - المرأة اللي كترضع ممكن تلقح
     - أنا مريض واش غادي ادير ليا اللقاح شي حاجة ؟
+    - أنا مريض ، واش ممكن نتلقح
+    - واش كاين شي وحدين مخصهومش اتلقحو
+    - واش كاين شي وحدين مخصهومش اتلقحوا
 
 - intent: thankyou
   examples: |
@@ -251,6 +316,7 @@ nlu:
     - الله يحفضك 
     - الله يجازيك بخير
     - العز
+    - شكرا على المعلومات القيمة
     - mrc
     - chokran
     - choukran
@@ -260,7 +326,6 @@ nlu:
     - allah y7fdk
     - lah yjazik bikhir
     - l3z
-
 
 - intent: goodbye
   examples: |
@@ -280,24 +345,98 @@ nlu:
     - نشوفوك
     - نتقاشعو 
     - يالاه نتقاشعو
-    - bslama
-    - thela
-    - tla7
-    - yallah tla7
-    - yallah thla frassk
-    - yallah bye
-    - bye
-    - aki 3awn rbi
-    - thla f rassk
-    - see you
-    - hbt
-    - yallah hbt
-    - nchofok
-    - yallah nchofok
-    - nt9ach3o
-    - yallah nt9ach3o
-    - stop
+    - إلى اللقاء
 
+- intent: covid_stat_city
+  examples: |
+    - شحال من حالة كاينة ليوم ف مدينة [طنجة](city_name)
+    - حالات الاصابة بكورونا ف مدينة [الدار البيضاء](city_name)
+    - شحال من حالة جديدة فمدينة [طاطا](city_name)
+    - شحال تزاد فمدينة [العيون](city_name)
+    - شحال تزاد فمدينة [طنجة أصيلة](city_name)
+    - شحال تزاد فمدينة [المضيق الفنيدق](city_name)
+    - شحال تزاد فمدينة [تطوان](city_name)
+    - شحال تزاد فمدينة [الحسيمة](city_name)
+    - شحال تزاد فمدينة [وزان](city_name)
+    - شحال تزاد فمدينة [شفشاون](city_name)
+    - شحال تزاد فمدينة [الفحص أنجرة](city_name)
+    - شحال تزاد فمدينة [العرائش](city_name)
+    - شحال تزاد فمدينة [وجدة أنكاد](city_name)
+    - شحال تزاد فمدينة [الناظور](city_name)
+    - شحال تزاد فمدينة [تاوريرت](city_name)
+    - شحال تزاد فمدينة [جرادة](city_name)
+    - شحال تزاد فمدينة [جرسيف](city_name)
+    - شحال تزاد فمدينة [الدريوش](city_name)
+    - شحال تزاد فمدينة [فكيك](city_name)
+    - شحال تزاد فمدينة [بركان](city_name)
+    - شحال تزاد فمدينة [فاس](city_name)
+    - شحال تزاد فمدينة [بولمان](city_name)
+    - شحال تزاد فمدينة [مكناس](city_name)
+    - شحال تزاد فمدينة [إفران](city_name)
+    - شحال تزاد فمدينة [الحاجب](city_name)
+    - شحال تزاد فمدينة [تاونات](city_name)
+    - شحال تزاد فمدينة [صفرو](city_name)
+    - شحال تزاد فمدينة [مولاي يعقوب](city_name)
+    - شحال تزاد فمدينة [تازة](city_name)
+    - شحال تزاد فمدينة [سلا](city_name)
+    - شحال تزاد فمدينة [الصخيرات تمارة](city_name)
+    - شحال تزاد فمدينة [الرباط](city_name)
+    - شحال تزاد فمدينة [سيدي قاسم](city_name)
+    - شحال تزاد فمدينة [القنيطرة](city_name)
+    - شحال تزاد فمدينة [الخميسات](city_name)
+    - شحال تزاد فمدينة [سيدي سليمان](city_name)
+    - شحال تزاد فمدينة [أزيلال](city_name)
+    - شحال تزاد فمدينة [خريبكة](city_name)
+    - شحال تزاد فمدينة [خنيفرة](city_name)
+    - شحال تزاد فمدينة [الفقيه بن صالح](city_name)
+    - شحال تزاد فمدينة [بني ملال](city_name)
+    - شحال تزاد فمدينة [الدار البيضاء](city_name)
+    - شحال تزاد فمدينة [النواصر](city_name)
+    - شحال تزاد فمدينة [الجديدة](city_name)
+    - شحال تزاد فمدينة [برشيد](city_name)
+    - شحال تزاد فمدينة [سطات](city_name)
+    - شحال تزاد فمدينة [سيدي بنور](city_name)
+    - شحال تزاد فمدينة [مديونة](city_name)
+    - شحال تزاد فمدينة [المحمدية](city_name)
+    - شحال تزاد فمدينة [بنسليمان](city_name)
+    - شحال تزاد فمدينة [مراكش](city_name)
+    - شحال تزاد فمدينة [الحوز](city_name)
+    - شحال تزاد فمدينة [أسفي](city_name)
+    - شحال تزاد فمدينة [اليوسفية](city_name)
+    - شحال تزاد فمدينة [الرحامنة](city_name)
+    - شحال تزاد فمدينة [قلعة السراغنة](city_name)
+    - شحال تزاد فمدينة [شيشاوة](city_name)
+    - شحال تزاد فمدينة [الصويرة](city_name)
+    - شحال تزاد فمدينة [ورززات](city_name)
+    - شحال تزاد فمدينة [ميدلت](city_name)
+    - شحال تزاد فمدينة [الرشيدية](city_name)
+    - شحال تزاد فمدينة [زاكورة](city_name)
+    - شحال تزاد فمدينة [تنغير](city_name)
+    - شحال تزاد فمدينة [أكادير إدا وتنان](city_name)
+    - شحال تزاد فمدينة [أنزكان - آيت ملول](city_name)
+    - شحال تزاد فمدينة [تزنيت](city_name)
+    - شحال تزاد فمدينة [طاطا](city_name)
+    - شحال تزاد فمدينة [تارودانت](city_name)
+    - شحال تزاد فمدينة [شتوكة آيت باها](city_name)
+    - شحال تزاد فمدينة [طانطان](city_name)
+    - شحال تزاد فمدينة [سيدي افني](city_name)
+    - شحال تزاد فمدينة [كلميم](city_name)
+    - شحال تزاد فمدينة [أسا الزاك](city_name)
+    - شحال تزاد فمدينة [طرفاية](city_name)
+    - شحال تزاد فمدينة [السمارة](city_name)
+    - شحال تزاد فمدينة [بوجدور](city_name)
+    - شحال تزاد فمدينة [العيون](city_name)
+    - شحال تزاد فمدينة [وادي الذهب](city_name)
+    - شحال تزاد فمدينة [أوسرد](city_name)
+    
+- intent: covid_report
+  examples: |
+    - chal mn hala tzal lyoma
+    - 3tini t9rir lyawmi
+    - xhal mn halat l2isaba lyoma
+    - halat lyoma
+    - halat 
+    - xhal mn hala lyoma
 
 - intent: bot_challenge
   examples: |
@@ -311,12 +450,27 @@ nlu:
     - واش كنهدر مع شاتبوت 
     - واش كنهدر مع شات بوت
     - معامن كندوي
-    - chkon nta
-    - wach nta bot
-    - m3amn kanhder
-    - wach kanhder m3a bot
-    - wach nta bnadm
-    - wach kanhder m3a bnadm
-    - wach kanhder m3a chatbot
-    - m3amn kandwi
+
+## out of scope 
+- intent: out_of_scope
+  examples: |
+    - واش ما عندك مايدار 
+    - كنقلب حلى خدمة 
+    - شحال درجة الحرارة اليوما 
+    - سخون الحال اليوم 
+    - بارد الحال اليوم 
+    - امتا الانتخابات 
+    - شكون هو رئيس أمريكا 
+    - كنحس بالملل
+    - فيا الجوع 
+    - شحال هي 1 + 1
+    - سير تلعب
+    - فلسطين حرة 
+    - عييت اصاحبي
+    - لاباس عليك
+    - مقاطعون
+    - بغيت نولي طبيب 
+    - بغيت نولي مهندس 
+    - مكاين ما يدار فهاد البلاد السعيدة
+
 

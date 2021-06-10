@@ -7,12 +7,22 @@ stories:
   - intent: greet
   - action: utter_greet
 
+- story: appearance path
+  steps:
+  - intent: appearance
+  - action: utter_appearance
+
+- story: vaccination autorisation path
+  steps:
+  - intent: vaccination_autorisation
+  - action: utter_vaccination_autorisation
+
 - story: last_news path
   steps:
   - intent: last_news
   - action: utter_health_emergency
   - action: utter_travel
-  - action: utter_Vaccination_autorisation
+  - action: utter_vaccination_autorisation
   - action: utter_other_news
 
 - story: symptoms path
@@ -58,12 +68,12 @@ stories:
 
 - story: vaccination effects path
   steps:
-  - intent: utter_vaccination_effects
+  - intent: vaccination_effects
   - action: utter_vaccination_effects
 
 - story: vaccination availability path
   steps:
-  - intent: utter_vaccination_availability
+  - intent: vaccination_availability
   - action: utter_vaccination_availability
 
 - story: vaccination contraindications path
@@ -92,3 +102,28 @@ stories:
   steps:
   - intent: definition
   - action: utter_definition
+
+- story: severity path
+  steps:
+  - intent: severity
+  - action: utter_severity
+
+- story: confinement path
+  steps:
+  - intent: confinement
+  - action: utter_confinement
+
+- story: propagation path
+  steps:
+  - intent: propagation
+  - action: utter_propagation
+
+- story: covid stat path
+  steps:
+  - intent: covid_stat_city
+  - action: action_covid_stat_city
+
+- story: covid report path
+  steps: 
+  - intent: covid_report
+  - action: action_covid_daily_report
