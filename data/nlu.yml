@@ -60,21 +60,7 @@ nlu:
     - شني كورورنا
     - شني هي كورونا
     - شنو هي كورونا
-<<<<<<< HEAD
-    - achanhiya corona
-    - axnahowa virus corona
-    - covid-19?
-    - corona
-    - axnahiya coroan
-    - achno tay3ni covid-19
-    - ach tat3ni corona
-    - fhmni corona
-    - virus ola microbe ?
-    - chno covid
-    - xno covid
 
-=======
->>>>>>> 3e1605ead25e7c520cfbf7824e5471ff28f260fb
 - intent: severity
   examples: |
     - هل ينبغي أن أشعر بالقلق من الإصابة بمرض كوفيد19
@@ -89,23 +75,7 @@ nlu:
     - كورونا عندو تأثير على الأطفال؟
     - كورونا عندو تأثير على الدراري الصغار؟
     - دابا وش غنموت ولا غنعيش؟
-<<<<<<< HEAD
-    - wach 5asni nkhaf mn corona
-    - wach corona tat9tl
-    - achnahya l5otora dyal corona
-    - l5otora dyal corona
-    - corona 3nd drari srrar
-    - corona tat9tl drari srrar
-    - corona tat9tl nas lkbar?
-    - wach corona marad 5atir?
-    - tat9tl?
-    - virus 9atil?
-    - wach 5asna n5afo m corona?
-    - n5af mn corona?
      
-=======
-
->>>>>>> 3e1605ead25e7c520cfbf7824e5471ff28f260fb
 - intent: confinement
   examples: |
     - شحال مدة الحجر
@@ -116,28 +86,17 @@ nlu:
     - هاد الحجر مطول واقيلا
     - شحال غانبقاو فهاد الحجر
     - ايمتا غيساليو الحجر
-<<<<<<< HEAD
-    - lhajr sihi
-    - achnahowa lhajr sihi
-    - halat tawari2?
-    - kifach halat tawari2?
-    - wach halat tawari2 mazal kayna?
-    - had lhajr sihi mtowl wa9ila
-=======
->>>>>>> 3e1605ead25e7c520cfbf7824e5471ff28f260fb
+
 
 - intent: propagation
   examples: |
     - علاه كيفاش كينتقل
     - وكي كينتاشر
     - كيفاش كينتشر الفيروس
-<<<<<<< HEAD
-    - kifach tatnta9l corona?
-    - kifax tatnta9l corona?
-    - ki taynta9l l virus?
-    - l2inti9al dyal covid-19?
-    - wach covid sari3 l intichar?
-    - 3lah kifach tatnta9l corona?
+    - كفاش تتنتاقل كورونا
+    - لانتقال ديال الفيروس
+    - كيفاش تينتقل كوفيد 19
+    - لانتقال ديال كوفيد 19
 
 - intent: appearance
   examples: |
@@ -160,12 +119,6 @@ nlu:
     - منين جا كورونا
     - منين جا هاد كورونا
     - واش كورونا كاينة بالصح
-=======
-    - كفاش تتنتاقل كورونا
-    - لانتقال ديال الفيروس
-    - كيفاش تينتقل كوفيد 19
-    - لانتقال ديال كوفيد 19
->>>>>>> 3e1605ead25e7c520cfbf7824e5471ff28f260fb
     
 - intent: last_news 
   examples: |
@@ -458,6 +411,7 @@ nlu:
     - عطني الاحصائيأت ديال اليوم
     - شحال من حالة تزادت ليوم
     - شحال تزاد اليوم
+
 - intent: vaccination_report
   examples: |
     - شحال من واحد خدا اللقاح
@@ -475,6 +429,7 @@ nlu:
     - الجرعة الاولى ديال اللقاح
     - الاحصائيات ديال التلقيح
     - الاحصائيات ديال اللقاح
+    
 - intent: bot_challenge
   examples: |
     - شكون نتا
