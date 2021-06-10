@@ -60,17 +60,6 @@ nlu:
     - شني كورورنا
     - شني هي كورونا
     - شنو هي كورونا
-    - achanhiya corona
-    - axnahowa virus corona
-    - covid-19?
-    - corona
-    - axnahiya coroan
-    - achno tay3ni covid-19
-    - ach tat3ni corona
-    - fhmni corona
-    - virus ola microbe ?
-    - chno covid
-    - xno covid
 - intent: severity
   examples: |
     - هل ينبغي أن أشعر بالقلق من الإصابة بمرض كوفيد19
@@ -85,18 +74,7 @@ nlu:
     - كورونا عندو تأثير على الأطفال؟
     - كورونا عندو تأثير على الدراري الصغار؟
     - دابا وش غنموت ولا غنعيش؟
-    - wach 5asni nkhaf mn corona
-    - wach corona tat9tl
-    - achnahya l5otora dyal corona
-    - l5otora dyal corona
-    - corona 3nd drari srrar
-    - corona tat9tl drari srrar
-    - corona tat9tl nas lkbar?
-    - wach corona marad 5atir?
-    - tat9tl?
-    - virus 9atil?
-    - wach 5asna n5afo m corona?
-    - n5af mn corona?
+
 - intent: confinement
   examples: |
     - شحال مدة الحجر
@@ -107,23 +85,16 @@ nlu:
     - هاد الحجر مطول واقيلا
     - شحال غانبقاو فهاد الحجر
     - ايمتا غيساليو الحجر
-    - lhajr sihi
-    - achnahowa lhajr sihi
-    - halat tawari2?
-    - kifach halat tawari2?
-    - wach halat tawari2 mazal kayna?
-    - had lhajr sihi mtowl wa9ila
+
 - intent: propagation
   examples: |
     - علاه كيفاش كينتقل
     - وكي كينتاشر
     - كيفاش كينتشر الفيروس
-    - kifach tatnta9l corona?
-    - kifax tatnta9l corona?
-    - ki taynta9l l virus?
-    - l2inti9al dyal covid-19?
-    - wach covid sari3 l intichar?
-    - 3lah kifach tatnta9l corona?
+    - كفاش تتنتاقل كورونا
+    - لانتقال ديال الفيروس
+    - كيفاش تينتقل كوفيد 19
+    - لانتقال ديال كوفيد 19
     
 - intent: last_news 
   examples: |
@@ -453,17 +424,6 @@ nlu:
     - عطني الاحصائيأت ديال اليوم
     - شحال من حالة تزادت ليوم
     - شحال تزاد اليوم
-    - chal mn hala tzat lyoma
-    - chal mn hala tzadt lyoma
-    - 3tini t9rir lyawmi
-    - 3tini lhalat li tzado lyoma
-    - lhalat li tzado lyouma
-    - t9rir dyal lyouma
-    - tkrir dyal lyouma
-    - xhal mn halat l2isaba lyoma
-    - halat lyoma
-    - halat 
-    - xhal mn hala lyoma
 - intent: vaccination_report
   examples: |
     - شحال من واحد خدا اللقاح
@@ -481,15 +441,6 @@ nlu:
     - الجرعة الاولى ديال اللقاح
     - الاحصائيات ديال التلقيح
     - الاحصائيات ديال اللقاح
-    - 3tini t9rir dyal li9ah
-    - 3tini t9rir dyal li9a7
-    - t9rir dyal tl9ih
-    - t9rir dyal tl9i7
-    - tkrir dyal li9ah
-    - chal mn wahd tl9h
-    - xhal mn wahd tl9h
-    - chal mn wahd 5da li9ah
-    - t9rir dyal likah
 - intent: bot_challenge
   examples: |
     - شكون نتا
