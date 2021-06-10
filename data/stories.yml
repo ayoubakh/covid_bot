@@ -127,3 +127,7 @@ stories:
   steps: 
   - intent: covid_report
   - action: action_covid_daily_report
+- story: vaccination report path
+  steps:
+  - intent: vaccination_report
+  - action: action_vaccination_report

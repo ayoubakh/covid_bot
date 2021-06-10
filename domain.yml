@@ -24,7 +24,9 @@ intents:
   - confinement
   - propagation
   - covid_stat_city
-
+  - covid_report
+  - vaccination_report
+  
 entities:
   - city_name
 
@@ -232,7 +234,7 @@ responses:
 actions:
   - action_covid_stat_city
   - action_covid_daily_report
-
+  - action_vaccination_report
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
