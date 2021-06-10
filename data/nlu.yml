@@ -443,13 +443,53 @@ nlu:
     - شحال تزاد فمدينة [أوسرد](city_name)
 - intent: covid_report
   examples: |
-    - chal mn hala tzal lyoma
+    - شحال مات
+    - شحال مات اليوم
+    - شحال من حالة اليوم
+    - عطيني تقرير ديال اليوم
+    - عطيني تقرير ديال اليومي
+    - شحال من حالة تزات ليوم
+    - عطني الاحصائيأت ديال الحالات
+    - عطني الاحصائيأت ديال اليوم
+    - شحال من حالة تزادت ليوم
+    - شحال تزاد اليوم
+    - chal mn hala tzat lyoma
+    - chal mn hala tzadt lyoma
     - 3tini t9rir lyawmi
+    - 3tini lhalat li tzado lyoma
+    - lhalat li tzado lyouma
+    - t9rir dyal lyouma
+    - tkrir dyal lyouma
     - xhal mn halat l2isaba lyoma
     - halat lyoma
     - halat 
     - xhal mn hala lyoma
-
+- intent: vaccination_report
+  examples: |
+    - شحال من واحد خدا اللقاح
+    - عطني التقرير ديال القاح
+    - عطني التقرير ديال القاح اليوما
+    - التقرير ديال القاح
+    - كاين شي لقاح ليوم
+    - التقرير اليومي د اللقاح
+    - شحال من واحد تلقح
+    - شحال من واحد خدا تلقيح
+    - الجرعة لولة ديال اللقاح
+    - الجرعة التاني ديال اللقاح
+    - الجرعة التانية ديال اللقاح
+    - الجرعة الثانية ديال اللقاح
+    - الجرعة الاولى ديال اللقاح
+    - الاحصائيات ديال التلقيح
+    - الاحصائيات ديال اللقاح
+    - 3tini t9rir dyal li9ah
+    - 3tini t9rir dyal li9a7
+    - t9rir dyal tl9ih
+    - t9rir dyal tl9i7
+    - tkrir dyal li9ah
+    - chal mn wahd tl9h
+    - xhal mn wahd tl9h
+    - chal mn wahd 5da li9ah
+    - t9rir dyal likah
 - intent: bot_challenge
   examples: |
     - شكون نتا

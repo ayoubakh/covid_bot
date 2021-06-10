@@ -48,7 +48,18 @@ def get_covid_stat_allregions(soup) :
             pass
     return result
 
+def get_vaccination_stat(soup) :
+    container = soup.select_one("#notification-button").find_next_sibling()
+    els = container.h4.find_all("span")
+    return {
+        'first_vac': els[1].text[::-1],
+        'second_vac': els[3].text[::-1]
+    }
+
 def findby_city_name(regions: dict, city_name: str):
+    if city_name == "طنجة":
+        city_name = "طنجة أصيلة"
+ 
     for region in regions:
         if region == "last_update": continue
         for city in regions[region] :

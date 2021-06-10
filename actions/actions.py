@@ -12,7 +12,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-from crawler import get_covid_stat_allregions, prepare_soup, findby_city_name, get_covid_stat
+from crawler import get_covid_stat_allregions, get_vaccination_stat, prepare_soup, findby_city_name, get_covid_stat
 
 soup = prepare_soup()
 
@@ -36,9 +36,9 @@ class ActionCovidStatCity(Action):
         
         else :
             response = """
-تقرير الحلات فمدينة {}
-الحالات جديدة : {}
-حالات الوفيات : {}
+تقرير الحالات فمدينة {}
+الحالات الجديدة : {}
+عدد الوفيات : {}
 ({})
             """
             dispatcher.utter_message(text=response.format(data["city_name"], data["new_cases"], data["deaths"], data["last_update"]))
@@ -58,13 +58,33 @@ class ActionCovidDailyReport(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         response = """
-هدا هو التقرير ديال لحالات ({})
-ـ عدد الحالات الاصابة : {}
+هذا هو التقرير ديال الحالات ({})
+ـ عدد حالات الإصابة : {}
 ـ عدد المتعافين : {}
-ـ عدد الوفايات : {}
+ـ عدد الوفيات : {}
 ـ عدد التحاليل : {}
             """.format(self.data["last_update"], self.data["daily_new_cases"], self.data["daily_recovered"], self.data["daily_deaths"], self.data["daily_tests"])
 
         dispatcher.utter_message(text=response)
 
         return []
+
+class ActionVaccinationReport(Action):
+    def __init__(self):
+        Action.__init__(self)
+        global soup
+        self.data = get_vaccination_stat(soup)
+    def name(self) -> Text:
+        return "action_vaccination_report"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            response = """
+عدد د الناس لي خداو لقاح:
+الجرعة الاولى : {}
+الجرعة الثانية : {}
+            """.format(self.data['first_vac'], self.data['second_vac'])
+            dispatcher.utter_message(response)
+            
+            return []
